@@ -1,0 +1,6 @@
+<div class="d-inline-flex justify-content-start align-items-center w-100 header">
+	<nav class="d-flex p-16 cursor-pointer" routerLink="dashboard" routerLinkActive="active">Dashboard</nav>
+	<nav class="d-flex p-16 cursor-pointer" routerLink="products" routerLinkActive="active">Products</nav>
+	<nav *ngIf="userService.isLogged" class="d-flex p-16 cursor-pointer" routerLink="account" routerLinkActive="active">Account</nav>
+	<nav *ngIf="!userService.isLogged" class="d-flex p-16 cursor-pointer" routerLink="log-in" routerLinkActive="active">Log in</nav>
+</div>

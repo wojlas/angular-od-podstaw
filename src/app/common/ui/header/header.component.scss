@@ -1,0 +1,13 @@
+.header {
+  background-color: lightgray;
+
+  nav {
+    color: black;
+    border-radius: 4px;
+
+    &.active {
+      background-color: #4d4d4d;
+      color: white;
+    }
+  }
+}
